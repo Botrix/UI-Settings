@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">手机找回</string>
+    <string-array name="entries">
+        <item>小苹果</item>
+        <item>小香蕉</item>
+        <item>小西瓜</item>
+    </string-array>
+    <string-array name="entriesvalue">
+        <item>apple</item>
+        <item>banana</item>
+        <item>watermelon</item>
+    </string-array>
+    <string name="defaultvalues">apple</string>
+</resources>

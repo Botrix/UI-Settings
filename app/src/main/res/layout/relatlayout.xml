@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:theme="@style/BlackText">
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/location"
+        android:layout_gravity="center"
+        android:id="@+id/imageView"
+
+        android:layout_centerHorizontal="true" />
+    <TextView
+        style="@style/SmallFont"
+        android:text="使用过程中需要获取本机识别码、开启定位服务获取位置信息、更改 WLAN 和移动数据状态。"
+        android:layout_gravity="center"
+        android:id="@+id/textView3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/option_item"
+        android:clickable="true"
+        android:padding="15dp"
+        android:id="@+id/relativeLayout2">
+        &lt;!&ndash;android:layout_marginTop="250dp"&ndash;&gt;
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/option_item"
+        android:clickable="true"
+        android:padding="15dp"
+        android:id="@+id/rlayout"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <!--android:layout_marginTop="20dp"-->
+
+        <TextView
+            style="@style/BoldFont"
+            android:text="查找我的手机" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        &lt;!&ndash;android:paddingLeft="10dp"
+        android:paddingRight="10dp"&ndash;&gt;
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line"
+            />
+    </LinearLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/option_item"
+        android:clickable="true"
+        android:padding="15dp"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/rlayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            style="@style/BoldFont"
+            android:text="设置" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow"/>
+
+    </RelativeLayout>
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line"/>
+    </LinearLayout>-->
+
+    <TextView
+        style="@style/SmallFont"
+        android:text="电脑登录 cloud.huawei.com 查找手机"
+        android:layout_gravity="center"
+        android:layout_below="@+id/view2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="false" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout3"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/BoldFont"
+                android:text="允许查找手机"
+                android:id="@+id/textView"
+                android:layout_marginLeft="13dp" />
+
+            <TextView
+                style="@style/SmallFont"
+                android:text="开启后，您可以远程定位、锁定设备、删除数据。"
+                android:layout_marginLeft="13dp"
+                android:id="@+id/textView2"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/toggle_selector"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            android:layout_gravity="end"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"
+        android:layout_alignBottom="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/view" />
+    <!--&lt;!&ndash; 无圆角&ndash;&gt;
+<LinearLayout style="@style/mid_layout"
+    android:orientation="horizontal">
+    <TextView
+        style="@style/CodeFont"
+        android:text="电脑登录"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+</RelativeLayout>
